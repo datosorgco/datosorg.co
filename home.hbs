@@ -6,8 +6,9 @@ into the {body} of the default.hbs template --}}
 <style type="text/css">
     .responsive-header-img {
         background-color: white;
-        background-size: contain;
+        background-size: auto;
         background-image: url(https://datosorg.co/otros/background_home.svg);
+        background-repeat: no-repeat;
     }
 
     @media(max-width: 1000px) {
@@ -34,7 +35,7 @@ into the {body} of the default.hbs template --}}
         font-size: 2.2rem;
         font-weight: 300;
     }
-    .site-description {
+    .site-description2 {
         color:#444444
         z-index: 10;
         margin: 0 150px;
@@ -55,15 +56,12 @@ into the {body} of the default.hbs template --}}
                 <h1 class="site-title">
                     <img class="site-logo" src="/otros/DatosOrg.png" alt="{{@site.title}}" />
                 </h1>
-                <h2 class="site-description2" align="center">{{@site.description}}</h2>
+                <h2 class="site-description2" align="center">
+                    Proyecto de creación de un repositorio de datos abiertos por y para entidades sin ánimo de lucro.
+                </h2>
 
                 
-                <p align="left">
-                    <!--
-                    <a class="boton" href="/directorio/">Registrate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;></a>
-                    <br/>En nuestro directorio de cientificos de datos.
-                    <br/>
-                    -->
+                <p>
                     <a class="boton" href="/que-hacemos/">Consultanos&nbsp;&nbsp;&nbsp;&nbsp;></a>
                     <!--<br/>Para solicitar servicios o realizar donaciones. -->
                 </p>
