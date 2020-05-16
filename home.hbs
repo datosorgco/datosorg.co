@@ -29,20 +29,32 @@ into the {body} of the default.hbs template --}}
                 url(https://datosorg.co/otros/background_home.svg) 2x);
         }
     }
+    
+    .site-home-header .site-description {
+        font-size: 2.2rem;
+        font-weight: 300;
+    }
+    .site-description {
+        color:#444444
+        z-index: 10;
+        margin: 0;
+        padding: 5px 0;
+        font-size: 2.1rem;
+        line-height: 1.4em;
+        font-weight: 400;
+        opacity: .8;
+    }
+ 
 </style>
-<div class="outer site-header-background responsive-header-img">
+<div class="outer responsive-header-img">
 
         <div class="inner">
             {{> "site-nav"}}
             <div class="site-header-content">
                 <h1 class="site-title">
-                    {{#if @site.logo}}
-                        <img class="site-logo" src="{{img_url @site.logo size="l"}}" alt="{{@site.title}}" />
-                    {{else}}
-                        {{@site.title}}
-                    {{/if}}
+                    <img class="site-logo" src="/otros/DatosOrg.png" alt="{{@site.title}}" />
                 </h1>
-                <h2 class="site-description">{{@site.description}}</h2>
+                <h2 class="site-description2">{{@site.description}}</h2>
 
                 
                 <p align="left">
