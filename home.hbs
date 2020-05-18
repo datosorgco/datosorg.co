@@ -3,56 +3,56 @@
 into the {body} of the default.hbs template --}}
 
 <header class="site-home-header">
-<style type="text/css">
-    .responsive-header-img {
-        background-color: white;
-        background-size: cover;
-        background-image: url(https://datosorg.co/otros/background_home.svg);
-        background-repeat: no-repeat;
-        background-position-x: center;
-    }
-
-    @media(max-width: 1000px) {
+    <style type="text/css">
         .responsive-header-img {
+            background-color: white;
+            background-size: cover;
             background-image: url(https://datosorg.co/otros/background_home.svg);
-            background-image: -webkit-image-set(url(https://datosorg.co/otros/background_home.svg) 1x,
-                url(https://datosorg.co/otros/background_home.svg) 2x);
-            background-image: image-set(url(https://datosorg.co/otros/background_home.svg) 1x,
-                url(https://datosorg.co/otros/background_home.svg) 2x);
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-position-y: center;
         }
-    }
 
-    @media(max-width: 600px) {
-        .responsive-header-img {
-            background-image: url(https://datosorg.co/otros/background_home.svg);
-            background-image: -webkit-image-set(url(https://datosorg.co/otros/background_home.svg) 1x,
-                url(https://datosorg.co/otros/background_home.svg) 2x);
-            background-image: image-set(url(https://datosorg.co/otros/background_home.svg) 1x,
-                url(https://datosorg.co/otros/background_home.svg) 2x);
+        @media(max-width: 1000px) {
+            .responsive-header-img {
+                background-image: url(https://datosorg.co/otros/background_home.svg);
+                background-image: -webkit-image-set(url(https://datosorg.co/otros/background_home.svg) 1x,
+                        url(https://datosorg.co/otros/background_home.svg) 2x);
+                background-image: image-set(url(https://datosorg.co/otros/background_home.svg) 1x,
+                        url(https://datosorg.co/otros/background_home.svg) 2x);
+            }
         }
-    }
-    
-    .site-home-header .site-description {
-        font-size: 2.2rem;
-        font-weight: 300;
-    }
-    .site-description2 {
-        color:#444444
-        z-index: 10;
-        margin: 0 150px;
-        padding: 5px 0;
-        font-size: 2.1rem;
-        line-height: 1.4em;
-        font-weight: 400;
-        opacity: .8;
-        min-width:270px;
-    }
- 
-</style>
-<div class="outer responsive-header-img">
+
+        @media(max-width: 600px) {
+            .responsive-header-img {
+                background-image: url(https://datosorg.co/otros/background_home.svg);
+                background-image: -webkit-image-set(url(https://datosorg.co/otros/background_home.svg) 1x,
+                        url(https://datosorg.co/otros/background_home.svg) 2x);
+                background-image: image-set(url(https://datosorg.co/otros/background_home.svg) 1x,
+                        url(https://datosorg.co/otros/background_home.svg) 2x);
+            }
+        }
+
+        .site-home-header .site-description {
+            font-size: 2.2rem;
+            font-weight: 300;
+        }
+
+        .site-description2 {
+            color: #444444 z-index: 10;
+            margin: 0 150px;
+            padding: 5px 0;
+            font-size: 2.1rem;
+            line-height: 1.4em;
+            font-weight: 400;
+            opacity: .8;
+            min-width: 270px;
+        }
+    </style>
+    <div class="outer responsive-header-img">
 
         <div class="inner">
-            
+
             <div class="site-header-content">
                 <h2 class="site-description2" align="center">
                     Proyecto
@@ -74,13 +74,83 @@ into the {body} of the default.hbs template --}}
 
 {{!-- The main content area --}}
 <main id="site-main" class="site-main outer">
+    <section id="services" class="features-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-title text-center pb-10">
+                        <h3 class="title">Our Services</h3>
+                        <p class="text">Stop wasting time and money designing and managing a website that doesn’t get
+                            results. Happiness guaranteed!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-7 col-sm-9">
+                    <div class="single-features mt-40">
+                        <div class="features-title-icon d-flex justify-content-between">
+                            <h4 class="features-title"><a href="#">Graphics Design</a></h4>
+                            <div class="features-icon">
+                                <i class="lni lni-brush"></i>
+                                <img class="shape" src="assets/images/f-shape-1.svg" alt="Shape">
+                            </div>
+                        </div>
+                        <div class="features-content">
+                            <p class="text">Short description for the ones who look for something new. Short description
+                                for the ones who look for something new.</p>
+                            <a class="features-btn" href="#">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-7 col-sm-9">
+                    <div class="single-features mt-40">
+                        <div class="features-title-icon d-flex justify-content-between">
+                            <h4 class="features-title"><a href="#">Website Design</a></h4>
+                            <div class="features-icon">
+                                <i class="lni lni-layout"></i>
+                                <img class="shape" src="assets/images/f-shape-1.svg" alt="Shape">
+                            </div>
+                        </div>
+                        <div class="features-content">
+                            <p class="text">Short description for the ones who look for something new. Short description
+                                for the ones who look for something new.</p>
+                            <a class="features-btn" href="#">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-7 col-sm-9">
+                    <div class="single-features mt-40">
+                        <div class="features-title-icon d-flex justify-content-between">
+                            <h4 class="features-title"><a href="#">Digital Marketing</a></h4>
+                            <div class="features-icon">
+                                <i class="lni lni-bolt"></i>
+                                <img class="shape" src="assets/images/f-shape-1.svg" alt="Shape">
+                            </div>
+                        </div>
+                        <div class="features-content">
+                            <p class="text">Short description for the ones who look for something new. Short description
+                                for the ones who look for something new.</p>
+                            <a class="features-btn" href="#">LEARN MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </section>
+
     <div class="inner posts">
 
         <div class="post-feed">
             {{#foreach posts}}
 
-                {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-                {{> "post-card"}}
+            {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+            {{> "post-card"}}
 
             {{/foreach}}
         </div>
@@ -99,7 +169,7 @@ into the {body} of the default.hbs template --}}
     //   Dropping the scroll event and using only a raf loop results in smoother
     //   scrolling but continuous processing even when not scrolling
     $(document).ready(function () {
-        
+
         var nav = document.querySelector('.site-nav-main .site-nav');
         var feed = document.querySelector('.post-feed');
 
