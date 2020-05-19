@@ -88,15 +88,19 @@ into the {body} of the default.hbs template --}}
             color: #444444;
             font-size: 12pt;
             text-align: center;
+            background-color:antiquewhite;
+            font-weight: bold;
+        }
+
+        .boton{
+            font-size: 18pt;
         }
 
         @media (prefers-color-scheme: dark) {
             body {
-                :: body {
-                    : : background: #fff !important;
-                    distinct background: #fff !important;
-                }
+                background: #fff !important;
             }
+        }
     </style>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -176,7 +180,7 @@ into the {body} of the default.hbs template --}}
                             Si estás en una entidad sin ánimo de lucro apoyanos llenando
                             la siguiente encuesta de caracterización:
                         </p>
-                        <div class="beneficio">
+                        <div class="boton">
                             <a href="#">
                                 Encuesta para entidades <br />
                                 sin ánimo de lucro
