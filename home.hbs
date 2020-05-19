@@ -91,12 +91,12 @@ into the {body} of the default.hbs template --}}
         }
 
         @media (prefers-color-scheme: dark) {
-            body {::
-            body {::
-                background: #fff !important;
-distinct                background: #fff !important;
+            body {
+                :: body {
+                    : : background: #fff !important;
+                    distinct background: #fff !important;
+                }
             }
-        }
     </style>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -170,12 +170,29 @@ distinct                background: #fff !important;
                     <div class="section-title text-center pb-10">
                         <h3 class="title">Estado del proyecto</h3>
                         <p class="text">
-                            Nos encontramos en etapa de validación de nuestra idea. 
-                            Estamos abiertos a la participación de socios externos y a 
-                            nuestra presentación a muchas fuentes de financiación. 
-                            Si estás en una entidad sin ánimo de lucro apoyanos llenando 
+                            Nos encontramos en etapa de validación de nuestra idea.
+                            Estamos abiertos a la participación de socios externos y a
+                            nuestra presentación a muchas fuentes de financiación.
+                            Si estás en una entidad sin ánimo de lucro apoyanos llenando
                             la siguiente encuesta de caracterización:
-                            <a href="">
+                            <a href="#" class="beneficio">Encuesta para entidades sin ánimo de lucro</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="features-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-title text-center pb-10">
+                        <h3 class="title">Contáctanos</h3>
+                        <p class="text">
+                            Teléfono celular: (+57) 3003622440<br />
+                            WhatsApp: <a href="https://wa.me/573003622440">Por WhatsApp</a><br />
+                            Email: datosorg@datosorg.co<br />
+                            Bogotá, Colombia<br />
                         </p>
                     </div>
                 </div>
