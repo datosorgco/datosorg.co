@@ -77,7 +77,8 @@ into the {body} of the default.hbs template --}}
             color: #6c6c6c;
             margin-top: 24px;
         }
-        .beneficio{
+
+        .beneficio {
             padding: 10px;
             margin: 10px;
             width: 93%;
@@ -86,6 +87,12 @@ into the {body} of the default.hbs template --}}
             color: #444444;
             font-size: 12pt;
             text-align: center;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #fff !important;
+            }
         }
     </style>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
@@ -142,6 +149,12 @@ into the {body} of the default.hbs template --}}
                     <div class="beneficio">Recibir voluntariado</div>
                     <div class="beneficio">Crear alianzas con otras entidades</div>
                     <div class="beneficio">Crear valor social</div>
+                    <div class="section-title text-center pb-10">
+                        <p class="text">
+                            En DatosOrg Reuniremos, almacenaremos y procesaremos datos abiertos para la sociedad
+                            colombiana.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
