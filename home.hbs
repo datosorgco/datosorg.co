@@ -237,11 +237,7 @@ into the {body} of the default.hbs template --}}
                     <div class="section-title text-center pb-10">
                         <h3 class="title">Conócenos</h3>
                         <ul class="nav" role="menu">
-                            {{#foreach navigation}}
-                            <li class="{{link_class for=(url) class=(concat "nav-" slug)}}" role="menuitem">
-                                <a href="{{url absolute="true"}}">{{label}}</a>
-                            </li>
-                            {{/foreach}}
+                            {{navigation}}
                         </ul>
                     </div>
                 </div>
